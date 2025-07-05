@@ -1,17 +1,14 @@
-import gymDiary_0 from "./assets/projectsImg/gymDiary_0.jpg";
 interface langType {
   eng: {
     navBar: string[];
     hero: {
       name: string;
-
       about: string;
       stack: { title: string; tech: string[] };
     };
     projects: {
       gymDiary: {
         name: string;
-        imgLink: string;
         gitHubLink: string;
         projectLink: string;
         about: string;
@@ -30,7 +27,6 @@ interface langType {
     projects: {
       gymDiary: {
         name: string;
-        imgLink: string;
         gitHubLink: string;
         projectLink: string;
         about: string;
@@ -45,7 +41,6 @@ export const lang: langType = {
     navBar: ["Home", "Projects", "Contact"],
     hero: {
       name: "Burmistrov Cyril",
-
       about:
         "Junior Frontend Developer with 1 year of self-directed development experience.",
       stack: {
@@ -56,7 +51,6 @@ export const lang: langType = {
     projects: {
       gymDiary: {
         name: "Gym Diary",
-        imgLink: gymDiary_0,
         gitHubLink: "https://github.com/TempestoCore/gymDiary/tree/main",
         projectLink: "https://gym-diary-nine.vercel.app/",
         about:
@@ -69,7 +63,6 @@ export const lang: langType = {
     navBar: ["Главная", "Проекты", "Связаться"],
     hero: {
       name: "Бурмистров Кирилл",
-
       about:
         "Начинающий фронтенд разработчик c опытом самостоятельной разработки в 1 год.",
       stack: {
@@ -80,7 +73,6 @@ export const lang: langType = {
     projects: {
       gymDiary: {
         name: "Gym Diary",
-        imgLink: gymDiary_0,
         gitHubLink: "https://github.com/TempestoCore/gymDiary/tree/main",
         projectLink: "https://gym-diary-nine.vercel.app/",
         about:
