@@ -1,7 +1,10 @@
 import { lang } from "../langObj";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
-import gymDiary_0 from "../assets/projectsImg/gymDiary_0.jpg";
+const gymDiary_0 = new URL(
+  "../assets/projectsImg/gymDiary_0.jpg",
+  import.meta.url
+).href;
 interface PropType {
   currentLang: string;
 }
