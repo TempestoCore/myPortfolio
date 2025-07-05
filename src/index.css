@@ -1,1 +1,125 @@
 @import "tailwindcss";
+@theme {
+  --color-*: initial;
+
+  --color-bg: #121212;
+  --color-text: #e0e0e0;
+  --color-border: #2e2e2e;
+  --color-card-bg: #1e1e1e;
+  --color-card-bg-transparent: rgba(30, 30, 30, 0.6);
+  --color-card-border: #3a3a3a;
+  --color-card-hover: #3a86ff;
+  --color-button: rgba(58, 134, 255, 0.6);
+  --color-button-hover: rgba(58, 134, 255, 0.2);
+  --color-accent-blue: #3a86ff;
+  --color-accent-blue: #2ec4b6;
+  --color-accent-turquoise: #8338ec;
+  --color-accent-orange: #ff9e00;
+
+  --animate-clockwiseCircle: clockwiseCircle 1s linear forwards;
+  --animate-counterClockwise: counterclockwiseCircle 1s linear forwards;
+  --animate-line: down 1s 1s linear forwards;
+  --animate-openNameDiv: openNameDiv 1s 2s linear forwards;
+  --animate-showNameDiv: showNameDiv 1s 3s ease-in forwards;
+  --animate-showAvatar: showAvatar 0.5s ease-in forwards;
+
+  /* Transition Pixel */
+
+  --animate-transitionShowPixel: showPixel 0.3s ease forwards;
+  --animate-transitionHidePixel: hidePixel 0.3s ease forwards;
+
+  @keyframes showPixel {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes hidePixel {
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes showAvatar {
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes showNameDiv {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes openNameDiv {
+    0% {
+      height: 0;
+      width: 0;
+    }
+    50% {
+      height: 0;
+      width: 80%;
+    }
+
+    100% {
+      height: 200px;
+      width: 80%;
+    }
+  }
+
+  @keyframes down {
+    from {
+      height: 0;
+    }
+    to {
+      height: 30px;
+    }
+  }
+
+  @keyframes clockwiseCircle {
+    to {
+      stroke-dashoffset: 220;
+    }
+  }
+
+  @keyframes counterclockwiseCircle {
+    to {
+      stroke-dashoffset: 220;
+    }
+  }
+}
+
+@utility clockwiseCircle {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+@utility clockwiseCircleAfterFirstLoad {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 220;
+}
+@utility counterclockwiseCircle {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+@utility counterclockwiseCircleAfterFirstLoad {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 220;
+}
+@utility bgImg {
+  background-size: cover;
+  background-position: center;
+}
+
+@layer base {
+  :root {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    border-color: var(--color-border);
+  }
+}
