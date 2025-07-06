@@ -23,20 +23,12 @@ export function TransitionAnimation() {
     };
 
     let intervalIdFirst: number = 0;
-    let intervalIdSecond: number = 0;
 
-    const animationHandler = (
-      animation: string,
-      arr: number[],
-      animationOld?: string
-    ) => {
+    const animationHandler = (animation: string, arr: number[]) => {
       let idx = 0;
       const intervalId = setInterval(() => {
         const randomIdx = arr[idx];
         const div = document.getElementById(`${randomIdx}`);
-        if (animationOld) {
-          div?.classList.remove(animationOld);
-        }
         div?.classList.add(animation);
         idx += 1;
       }, 10);
@@ -47,22 +39,13 @@ export function TransitionAnimation() {
       "animate-transitionShowPixel",
       getRandomArray(100)
     );
-    const timeOutId = setTimeout(() => {
-      intervalIdSecond = animationHandler(
-        "animate-transitionHidePixel",
-        getRandomArray(100),
-        "animate-transitionShowPixel"
-      );
-    }, 1400);
 
     const timeOutEndId = setTimeout(() => {
       handleAnimationEnd();
-    }, 2500);
+    }, 1500);
 
     return () => {
       clearInterval(intervalIdFirst);
-      clearTimeout(timeOutId);
-      clearInterval(intervalIdSecond);
       clearTimeout(timeOutEndId);
     };
   }, [setTransition, divArr]);

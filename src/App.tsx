@@ -53,11 +53,11 @@ function App() {
       ) : (
         <Contact currentLang={currentLang} />
       )}
-      <div className="">
+      <div>
         <button
           className={` cursor-pointer ${
             currentLang === "ru" ? "font-bold text-2xl" : "opacity-50"
-          } hover:text-button transition-colors duration-300 ease`}
+          } hover:text-card-border transition-colors duration-300 ease`}
           onClick={() => changeLang("ru")}
         >
           RU
@@ -65,7 +65,7 @@ function App() {
         <button
           className={` cursor-pointer ${
             currentLang === "eng" ? "font-bold text-2xl" : "opacity-50"
-          } hover:text-button transition-colors duration-300 ease`}
+          } hover:text-card-border transition-colors duration-300 ease`}
           onClick={() => changeLang("eng")}
         >
           ENG

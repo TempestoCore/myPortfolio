@@ -72,11 +72,11 @@ export function Home({ currentLang }: PropType) {
           }`}
         >
           <div
-            className={`flex flex-col justify-center h-auto w-auto opacity-0 sm:overflow-hidden overflow-y-scroll ${
+            className={`flex flex-col justify-center h-auto w-auto opacity-0 sm:overflow-hidden overflow-y-auto ${
               !firstPageLoad[0] ? "animate-showNameDiv" : "opacity-100 "
             }`}
           >
-            <span className="text-2xl">{text.name}</span>
+            <span className="text-2xl font-bold">{text.name}</span>
             <span className="text-lg">{text.about}</span>
             <span className="text-lg">
               {text.stack.title}
