@@ -54,7 +54,7 @@ export const lang: langType = {
         gitHubLink: "https://github.com/TempestoCore/gymDiary/tree/main",
         projectLink: "https://gym-diary-nine.vercel.app/",
         about:
-          "A website for saving workout and nutrition plans, with statistics and a stopwatch that shows the current exercise and saves workout progress.",
+          "A website for saving workout and nutrition plans, tracking workout history, and featuring a stopwatch that saves training progress.",
         stack: ["HTML", "CSS(TailwindCSS)", "TS", "React", "Supabase"],
       },
     },
@@ -76,7 +76,7 @@ export const lang: langType = {
         gitHubLink: "https://github.com/TempestoCore/gymDiary/tree/main",
         projectLink: "https://gym-diary-nine.vercel.app/",
         about:
-          "Сайт для сохранения плана тренировки и питания, статистикой и секундомером который показывает текущее упражнение и сохраняет прогресс тренировки.",
+          "Сайт для сохранения плана тренировки и питания, историей тренировок и секундомером который сохраняет прогресс тренировки.",
         stack: ["HTML", "CSS(TailwindCSS)", "TS", "React", "Supabase"],
       },
     },
